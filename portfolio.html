@@ -9,37 +9,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href=".//css/styles.css" />
   <title>Web Studio</title>
 </head>
 
 <body>
   <header class="header">
-    <a class="header-logo logo" href="#"><span class="logo-text">Web</span>Studio</a>
-    <nav class="header-nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link link" href="./index.html">Студія</a>
+    <div class="container header-container">
+      <a class="header-logo logo" href="#"><span class="logo-text">Web</span>Studio</a>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link link" href="./index.html">Студія</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link link current" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link" href="#">Контакти</a>
+        <li class="header-item">
+          <a class="header-link link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
-    </nav>
-    <ul class="header-list">
-      <li class="header-item">
-        <a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
-      <li class="header-item">
-        <a class="header-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-      </li>
-    </ul>
+    </div>
   </header>
     <main>
       <section class="section example">
@@ -55,9 +57,11 @@
       <ul class="example-list">
         <li class="example-item">
           <a class="example-link" href="#">
-            <img src="./images/web.jpg" width="370" height="294" alt="Web site photo" />
+            <img src="./images/web.jpg" width="370" alt="Web site photo" />
+            <div class="example-wrap">
             <h2 class="example-titel">Технокряк</h2>
             <p class="example-text">Веб-сайт</p>
+            </div>
           </a>
         </li>
         <li class="example-item">
@@ -65,53 +69,66 @@
           <img
             src="./images/design.jpg"
             width="370"
-            height="294"
             alt="New Orlean vs Golden Star photo"
           />
+          <div class="example-wrap">
           <h2 class="example-titel">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
           <p class="example-text">Дизайн</p>
+          </div>
         </a>
         </li>
         <li class="example-item">
           <a class="example-link" href="#">
-          <img src="./images/app.jpg" width="370" height="294" alt="App Seafood photo" />
+          <img src="./images/app.jpg" width="370" alt="App Seafood photo" />
+          <div class="example-wrap">
           <h2 class="example-titel">Ресторан Seafood</h2>
           <p class="example-text">Додаток</p>
+          </div>
           </a>
         </li>
         <li class="example-item">
           <a class="example-link" href="">
-          <img src="./images/prime.jpg" width="370" height="294" alt="Prime photo" />
+          <img src="./images/prime.jpg" width="370" alt="Prime photo" />
+          <div class="example-wrap">
           <h2 class="example-titel">Проєкт Prime</h2>
           <p class="example-text">Маркетинг</p>
+          </div>
           </a>
         </li>
         <li class="example-item">
           <a class="example-link" href="#"></a>
-          <img src="./images/boxes.jpg" width="370" height="294" alt="App Boxes photo" />
+          <img src="./images/boxes.jpg" width="370" alt="App Boxes photo" />
+          <div class="example-wrap">
           <h2 class="example-titel">Проєкт Boxes</h2>
           <p class="example-text">Додаток</p>
+          </div>
           </a>
         </li>
         <li class="example-item">
           <a class="example-link" href="#">
-          <img src="./images/web2.jpg" width="370" height="294" alt="Web site photo" />
+          <img src="./images/web2.jpg" width="370" alt="Web site photo" />
+          <div class="example-wrap">
           <h2 class="example-titel">Inspiration has no Borders</h2>
           <p class="example-text">Веб-сайт</p>
+          </div>
           </a>
         </li>
         <li class="example-item">
           <a class="example-link" href="#">
-          <img src="./images/design2.jpg" width="370" height="294" alt="Edition Limited Edition" />
+          <img src="./images/design2.jpg" width="370" alt="Edition Limited Edition" />
+          <div class="example-wrap">
           <h2 class="example-titel">Видання Limited Edition</h2>
           <p class="example-text">Дизайн</p>
+          </div>
           </a>
         </li>
         <li class="example-item">
           <a class="example-link" href="#">
-          <img src="./images/lab.jpg" width="370" height="294" alt="LAB project photo" />
+          <img src="./images/lab.jpg" width="370" alt="LAB project photo" />
+          <div class="example-wrap">
           <h2 class="example-titel">Проєкт LAB</h2>
           <p class="example-text">Маркетинг</p>
+          </div>
           </a>
         </li>
         <li class="example-item">
@@ -119,11 +136,11 @@
           <img
             src="./images/business.jpg"
             width="370"
-            height="294"
-            alt="App Growing Business photo"
-          />
+            alt="App Growing Business photo"/>
+            <div class="example-wrap">
           <h2 class="example-titel">Growing Business</h2>
           <p class="example-text">Додаток</p>
+          </div>
           </a>
         </li>
       </ul>
